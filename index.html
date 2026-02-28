@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Nutricional Vianett Caso Lazcano</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#058c54', // Verde del logo/botones
+                        'primary-dark': '#03633b',
+                        'primary-light': '#e6f4ef',
+                        navy: '#0f172a', // Azul oscuro para tarjetas de reglas
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #f8fafc; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .card-shadow { box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
+    </style>
+</head>
+<body class="text-slate-800 antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="bg-white border-b border-slate-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & Titles -->
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl shadow-md border-2 border-green-200">
+                        🥗
+                    </div>
+                    <div>
+                        <h1 class="font-heading font-bold text-lg leading-tight text-slate-900">Plan Nutricional Vianett Caso Lazcano</h1>
+                        <p class="text-xs font-semibold text-slate-500 tracking-wider">BIO-RESET 360 X VIANETT</p>
+                    </div>
+                </div>
+                <!-- Navigation (Desktop) -->
+                <nav class="hidden md:flex gap-6">
+                    <a href="#estrategia" class="text-primary font-medium text-sm hover:text-primary-dark transition-colors">Estrategia</a>
+                    <a href="#menus" class="text-slate-500 text-sm hover:text-slate-900 transition-colors">Menús</a>
+                    <a href="#reglas" class="text-slate-500 text-sm hover:text-slate-900 transition-colors">Reglas</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+
+        <!-- Strategy Section -->
+        <section id="estrategia" class="bg-white rounded-[2rem] p-8 md:p-10 card-shadow border border-slate-100">
+            <h2 class="font-heading font-bold text-3xl mb-4 text-slate-900">Plan Nutricional Vianett Caso Lazcano</h2>
+            
+            <!-- Datos del Paciente -->
+            <div class="flex flex-wrap gap-4 mb-8">
+                <div class="bg-slate-50 px-4 py-2 rounded-xl border border-slate-100 flex items-center gap-2">
+                    <span class="text-lg">📅</span>
+                    <span class="text-sm text-slate-600"><strong class="text-slate-800">F. Nacimiento:</strong> 30/06/1982</span>
+                </div>
+                <div class="bg-slate-50 px-4 py-2 rounded-xl border border-slate-100 flex items-center gap-2">
+                    <span class="text-lg">⚖️</span>
+                    <span class="text-sm text-slate-600"><strong class="text-slate-800">Peso:</strong> 78 kg</span>
+                </div>
+                <div class="bg-slate-50 px-4 py-2 rounded-xl border border-slate-100 flex items-center gap-2">
+                    <span class="text-lg">📏</span>
+                    <span class="text-sm text-slate-600"><strong class="text-slate-800">Estatura:</strong> 165 cm</span>
+                </div>
+            </div>
+            
+            <div class="space-y-4 text-slate-600 leading-relaxed max-w-4xl mb-10">
+                <p>Tu plan está diseñado con un objetivo de <strong class="text-slate-900">1900 kcal</strong>. La estrategia se centra en el control glucémico y control de grasas saturadas por el Colesterol.</p>
+                <p>Los menús tienen una carga glucémica (CG) baja a moderada. Aunque se incluyen fuentes de carbohidratos (como el arroz, la tortilla y la avena), la clave está en la combinación de los alimentos. Al emparejar esos carbohidratos con la fibra de las verduras, las proteínas (huevo, carne, pollo) y las grasas saludables (aguacate, aceite de oliva, almendras), se retrasa el vaciamiento gástrico. Esto evita que el azúcar de las frutas y los cereales entre de golpe al torrente sanguíneo, manteniendo a raya la prediabetes y protegiendo el trabajo de la metformina.</p>
+                <div class="bg-slate-50 p-4 rounded-xl text-sm border border-slate-100">
+                    <strong class="text-primary block mb-1">Distribución diaria:</strong>
+                    4 Fruta, 5 Verdura, 8 Cereales s/grasa, 5 POA Muy Bajo en Grasa, 3 POA Bajo en Grasa, 3 POA Moderado en Grasa, 1 Leche Semidescremada, 5 Grasa s/proteína, 1 Grasa c/proteína.
+                </div>
+                <div class="bg-red-50 p-4 rounded-xl text-sm border border-red-100 mt-2 flex items-center gap-3 text-red-800">
+                    <span class="text-xl">💪</span>
+                    <strong>Priorizaremos la proteína por la sospecha de obesidad sarcopénica.</strong>
+                </div>
+            </div>
+
+            <!-- Macros Table -->
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm text-center">
+                    <thead>
+                        <tr class="text-xs text-slate-400 font-bold tracking-wider uppercase border-b border-slate-100">
+                            <th class="pb-4 text-left font-semibold">Análisis</th>
+                            <th class="pb-4 font-semibold">HDEC (Carbs)</th>
+                            <th class="pb-4 font-semibold">Prot</th>
+                            <th class="pb-4 font-semibold">Lip</th>
+                            <th class="pb-4 font-semibold">Calorías</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-50">
+                        <tr class="font-medium text-slate-700">
+                            <td class="py-5 text-left text-slate-900 font-bold">Total</td>
+                            <td class="py-5">223 g</td>
+                            <td class="py-5">109 g</td>
+                            <td class="py-5">63 g</td>
+                            <td class="py-5 text-slate-900 font-bold">~1895 cal</td>
+                        </tr>
+                        <tr class="text-slate-500">
+                            <td class="py-5 text-left font-medium">Meta</td>
+                            <td class="py-5">223 g</td>
+                            <td class="py-5">109 g</td>
+                            <td class="py-5">63 g</td>
+                            <td class="py-5">1900 cal</td>
+                        </tr>
+                        <tr class="font-bold text-primary">
+                            <td class="py-5 text-left">Adecuación</td>
+                            <td class="py-5">100.0 %</td>
+                            <td class="py-5">100.0 %</td>
+                            <td class="py-5">100.0 %</td>
+                            <td class="py-5">-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Pillars (Badges layout) -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white p-6 rounded-2xl card-shadow border border-slate-100 text-center">
+                <div class="text-4xl mb-3">🥗</div>
+                <h3 class="font-heading font-bold text-slate-800 mb-2">Volumen Alto</h3>
+                <p class="text-sm text-slate-500">Porciones de verduras para máxima saciedad.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl card-shadow border border-slate-100 text-center">
+                <div class="text-4xl mb-3">🥑</div>
+                <h3 class="font-heading font-bold text-slate-800 mb-2">Grasas Buenas</h3>
+                <p class="text-sm text-slate-500">30-35g de Monoinsaturadas (Oliva/Aguacate) para protección cardio.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl card-shadow border border-slate-100 text-center">
+                <div class="text-4xl mb-3">📉</div>
+                <h3 class="font-heading font-bold text-slate-800 mb-2">Control Glucémico</h3>
+                <p class="text-sm text-slate-500">Cereales integrales y frutas siempre acompañadas de fibra/grasa.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl card-shadow border border-slate-100 text-center md:col-span-1.5">
+                <div class="text-4xl mb-3">⚡</div>
+                <h3 class="font-heading font-bold text-slate-800 mb-2">Lógica Pre-Entreno</h3>
+                <p class="text-sm text-slate-500">Energía rápida de la fruta y grasas estables para evitar fatiga en la mañana.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl card-shadow border border-slate-100 text-center md:col-span-1.5">
+                <div class="text-4xl mb-3">🌶️</div>
+                <h3 class="font-heading font-bold text-slate-800 mb-2">Toque Poblano</h3>
+                <p class="text-sm text-slate-500">Uso de chiles, nopales y calabacitas locales para que no sea "de hospital".</p>
+            </div>
+        </section>
+
+        <!-- Menus Section -->
+        <section id="menus" class="pt-6">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                <div>
+                    <h2 class="font-heading font-bold text-2xl text-slate-900">Opciones de Menús</h2>
+                    <p class="text-sm text-slate-500 mt-1">Haz clic en cada menú para ver tus 4 tiempos de comida equilibrados.</p>
+                </div>
+                
+                <!-- Day Tabs (Updated to Menú 1, 2, 3) -->
+                <div class="bg-white rounded-full p-1 border border-slate-200 inline-flex overflow-x-auto hide-scrollbar">
+                    <button onclick="setDay('Menú 1')" id="tab-Menú-1" class="day-tab px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 bg-primary text-white shadow-sm">Menú 1</button>
+                    <button onclick="setDay('Menú 2')" id="tab-Menú-2" class="day-tab px-5 py-2 rounded-full text-sm font-medium text-slate-500 hover:text-slate-800 transition-all duration-200">Menú 2</button>
+                    <button onclick="setDay('Menú 3')" id="tab-Menú-3" class="day-tab px-5 py-2 rounded-full text-sm font-medium text-slate-500 hover:text-slate-800 transition-all duration-200">Menú 3</button>
+                </div>
+            </div>
+
+            <!-- Menu Cards Container -->
+            <div id="menu-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Cards will be injected here via JS -->
+            </div>
+        </section>
+
+        <!-- Rules Section (Orden Ingesta & Reglas Carbohidrato) -->
+        <section id="reglas" class="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-6">
+            
+            <!-- Orden de Ingesta Inteligente -->
+            <div class="bg-white rounded-[2rem] p-8 card-shadow border border-slate-100">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="text-2xl">🍽️</span>
+                    <h3 class="font-heading font-bold text-xl text-slate-900">Orden de Ingesta Inteligente</h3>
+                </div>
+                
+                <div class="space-y-6 relative before:absolute before:inset-0 before:ml-[1.1rem] before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-200 before:to-transparent pl-10 md:pl-0">
+                    
+                    <!-- Item 1 -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                        <div class="flex items-center justify-center w-8 h-8 rounded-full border border-white bg-primary-light text-primary font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 absolute -left-10 md:left-1/2">
+                            1
+                        </div>
+                        <div class="w-full md:w-[calc(50%-2.5rem)] pb-4 md:pb-0 md:group-odd:text-right md:group-even:text-left">
+                            <h4 class="font-bold text-slate-800">Primero la Fibra</h4>
+                            <p class="text-sm text-slate-500 mt-1">Vegetales (nopales, ensalada, calabacitas). Esto crea un "filtro" en tu intestino.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2 -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                        <div class="flex items-center justify-center w-8 h-8 rounded-full border border-white bg-primary-light text-primary font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 absolute -left-10 md:left-1/2">
+                            2
+                        </div>
+                        <div class="w-full md:w-[calc(50%-2.5rem)] pb-4 md:pb-0 md:group-odd:text-right md:group-even:text-left">
+                            <h4 class="font-bold text-slate-800">Proteína y Grasas</h4>
+                            <p class="text-sm text-slate-500 mt-1">Huevo, pollo, carne, queso y el aguacate o aceite. Esto frena el vaciado gástrico.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                        <div class="flex items-center justify-center w-8 h-8 rounded-full border border-white bg-primary-light text-primary font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 absolute -left-10 md:left-1/2">
+                            3
+                        </div>
+                        <div class="w-full md:w-[calc(50%-2.5rem)] md:group-odd:text-right md:group-even:text-left">
+                            <h4 class="font-bold text-slate-800">Al final el Carbohidrato</h4>
+                            <p class="text-sm text-slate-500 mt-1">Tortillas, arroz, pan o fruta. Reduce el impacto de glucosa hasta en un 40%.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-primary-light text-primary-dark p-4 rounded-xl text-sm font-medium">
+                    <strong class="text-primary font-bold">Tip:</strong> Si el arroz está frío o se recalienta, es aún mejor para tu glucosa (se forma almidón resistente).
+                </div>
+            </div>
+
+            <!-- Reglas del Carbohidrato -->
+            <div class="bg-navy rounded-[2rem] p-8 text-white card-shadow">
+                <div class="flex items-center gap-3 mb-8">
+                    <span class="text-2xl">⚡</span>
+                    <h3 class="font-heading font-bold text-xl">Reglas del Carbohidrato</h3>
+                </div>
+                
+                <ul class="space-y-6">
+                    <li class="flex gap-4">
+                        <span class="text-yellow-400 mt-1">•</span>
+                        <p class="text-sm text-slate-300 leading-relaxed"><strong class="text-white">La Fruta siempre acompañada:</strong> Nunca comas fruta sola. Siempre con semillas (almendras/cacahuates) o la proteína del plan.</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-yellow-400 mt-1">•</span>
+                        <p class="text-sm text-slate-300 leading-relaxed"><strong class="text-white">Protección Metformina:</strong> La combinación de grasas buenas y fibra es vital para evitar picos que el medicamento tenga que compensar bruscamente.</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-yellow-400 mt-1">•</span>
+                        <p class="text-sm text-slate-300 leading-relaxed"><strong class="text-white">Cuidado Colesterol:</strong> Por eso las grasas son del aguacate y aceite de oliva/canola. Mantenemos quesos bajos en grasa y evitamos freír.</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-yellow-400 mt-1">•</span>
+                        <p class="text-sm text-slate-300 leading-relaxed"><strong class="text-white">Pre-entreno obligatorio:</strong> Evita elevar el cortisol. El snack antes de tu sesión de ejercicio te dará energía sin alterar tus picos de azúcar.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JavaScript para lógica de menús -->
+    <script>
+        const menuData = {
+            'Menú 1': [
+                {
+                    tag: 'SNACK PRE',
+                    icon: '🍌',
+                    title: 'Energía estable',
+                    desc: '<ul><li class="mb-2">1 Plátano ó 3 guayabas ó 1 pera.</li><li class="mb-2">10 piezas de almendras.</li></ul><p class="text-xs text-primary-dark mt-3 bg-primary-light p-2 rounded"><strong>Nota:</strong> Las almendras bajan la carga glucémica del plátano para el ejercicio.</p>'
+                },
+                {
+                    tag: 'DESAYUNO',
+                    icon: '🍳',
+                    title: 'Recuperación muscular',
+                    desc: '<ul><li class="mb-2">2 huevos enteros + 1 clara revueltos con 1 taza de nopales picados y 1/2 taza de jitomate/cebolla.</li><li class="mb-2">1 cdita aceite de canola (guisar).</li><li class="mb-2">3 tortillas de maíz.</li><li class="mb-2">3 Guayabas frescas (fibra).</li><li class="mb-2">Café o té sin azúcar.</li></ul>'
+                },
+                {
+                    tag: 'COMIDA',
+                    icon: '🍗',
+                    title: 'El sabor que le gusta',
+                    desc: '<ul><li class="mb-2">120 g de pechuga de pollo desmenuzada/asada en salsa verde tatemada (sin freír/crema).</li><li class="mb-2">Ensalada: 1 tza pepino + 1 tza lechuga con limón.</li><li class="mb-2">1 taza de arroz integral.</li><li class="mb-2">2 cditas aceite de oliva + 1/3 aguacate.</li><li class="mb-2">1 Naranja entera (en gajos).</li></ul>'
+                },
+                {
+                    tag: 'CENA',
+                    icon: '🥪',
+                    title: 'Cierre reconfortante',
+                    desc: '<ul><li class="mb-2">40 g queso panela asado + 2 reb. jamón de pavo (Ó 120g panela solo).</li><li class="mb-2">1 taza calabacitas a la mexicana.</li><li class="mb-2">2 tostadas horneadas.</li><li class="mb-2">1 taza leche semidescremada.</li><li class="mb-2">1 manzana ó pera (hervida/asada) con canela.</li></ul>'
+                }
+            ],
+            'Menú 2': [
+                {
+                    tag: 'SNACK PRE',
+                    icon: '🥭',
+                    title: 'Energía rápida',
+                    desc: '<ul><li class="mb-2">1 taza de papaya picada.</li><li class="mb-2">10 piezas de almendras.</li></ul>'
+                },
+                {
+                    tag: 'DESAYUNO',
+                    icon: '🍳',
+                    title: 'Proteína y saciedad',
+                    desc: '<ul><li class="mb-2">Omelet de 2 huevos enteros + 1 clara relleno de 1/2 taza champiñones y 1 taza espinacas crudas.</li><li class="mb-2">Salsa de jitomate natural (1/2 taza).</li><li class="mb-2">1 cdita aceite de canola.</li><li class="mb-2">3 tortillas de maíz.</li><li class="mb-2">3 Guayabas. Café/Té s/azúcar.</li></ul>'
+                },
+                {
+                    tag: 'COMIDA',
+                    icon: '🥩',
+                    title: 'Nutrición completa',
+                    desc: '<ul><li class="mb-2">120 g bistec de res magro (bola) asado. (1 cdita aceite canola).</li><li class="mb-2">1 taza nopales asados + 1 taza pepino.</li><li class="mb-2">1 taza de arroz integral.</li><li class="mb-2">1 cdita aceite de oliva (crudo) + 1/3 aguacate.</li><li class="mb-2">1 taza de melón picado.</li></ul>'
+                },
+                {
+                    tag: 'CENA',
+                    icon: '🥣',
+                    title: 'Rápida y saciante',
+                    desc: '<ul><li class="mb-2">Rollitos: 3 reb. de pechuga de PAVO rellenas de 1 taza de ejotes cocidos.</li><li class="mb-2">1 taza de yogurt natural semidescremado (sin azúcar).</li><li class="mb-2">1/2 taza de avena en hojuelas (mezclada en el yogurt).</li><li class="mb-2">1 manzana picada fresca.</li></ul>'
+                }
+            ],
+            'Menú 3': [
+                {
+                    tag: 'SNACK PRE',
+                    icon: '🍐',
+                    title: 'Activación matutina',
+                    desc: '<ul><li class="mb-2">1 Pera fresca.</li><li class="mb-2">10 piezas de almendras.</li></ul>'
+                },
+                {
+                    tag: 'DESAYUNO',
+                    icon: '🍳',
+                    title: 'Desayuno tradicional',
+                    desc: '<ul><li class="mb-2">2 + 1 huevos enteros a la mexicana (1 tza espinacas, 1/4 cebolla, chile serrano).</li><li class="mb-2">2 cditas de aceite de canola.</li><li class="mb-2">2 tortillas de maíz.</li><li class="mb-2">1 taza de papaya.</li><li class="mb-2">Café o té sin azúcar.</li></ul>'
+                },
+                {
+                    tag: 'COMIDA',
+                    icon: '🐟',
+                    title: 'Proteína ligera',
+                    desc: '<ul><li class="mb-2">150 g filete de pescado blanco (tilapia) empapelado con epazote.</li><li class="mb-2">1 taza chayote + 1 taza calabaza.</li><li class="mb-2">1 taza de arroz blanco o integral.</li><li class="mb-2">3 cditas aceite de oliva (encima del pescado ya servido).</li><li class="mb-2">1 Naranja en gajos.</li></ul>'
+                },
+                {
+                    tag: 'CENA',
+                    icon: '🍞',
+                    title: 'Cena equilibrada',
+                    desc: '<ul><li class="mb-2">2 rebanadas pan integral (tostadas).</li><li class="mb-2">120 g requesón bajo en grasa untado.</li><li class="mb-2">1 taza jitomates asados con orégano por encima del pan.</li><li class="mb-2">1 taza leche semidescremada.</li><li class="mb-2">1/2 pera asada con canela.</li></ul>'
+                }
+            ]
+        };
+
+        function renderCards(day) {
+            const container = document.getElementById('menu-container');
+            container.innerHTML = ''; // Clear actual
+
+            const data = menuData[day];
+            
+            data.forEach((meal) => {
+                // Determine label bottom text
+                let footerLabel = '';
+                if(meal.tag.includes('SNACK')) footerLabel = 'BALANCE';
+                else if(meal.tag.includes('DESAYUNO')) footerLabel = 'INICIO';
+                else if(meal.tag.includes('COMIDA')) footerLabel = 'PROTEÍNA';
+                else footerLabel = 'CIERRE';
+
+                const cardHTML = `
+                    <div class="bg-white rounded-[1.5rem] p-6 card-shadow border border-slate-100 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="text-[10px] font-bold text-primary bg-primary-light px-3 py-1 rounded-full tracking-widest uppercase">${meal.tag}</span>
+                            <span class="text-3xl">${meal.icon}</span>
+                        </div>
+                        ${meal.title ? `<h4 class="font-heading font-semibold text-sm text-slate-800 mb-2">${meal.title}</h4>` : ''}
+                        <div class="text-sm text-slate-600 leading-relaxed flex-grow">
+                            ${meal.desc}
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-50">
+                            <span class="text-[10px] font-bold text-slate-400 tracking-widest uppercase">${footerLabel}</span>
+                        </div>
+                    </div>
+                `;
+                container.insertAdjacentHTML('beforeend', cardHTML);
+            });
+        }
+
+        function setDay(selectedDay) {
+            // Transform 'Menú 1' to 'Menú-1' for ID matching
+            const safeId = selectedDay.replace(' ', '-');
+            
+            // Reset styles for all tabs
+            document.querySelectorAll('.day-tab').forEach(tab => {
+                tab.classList.remove('bg-primary', 'text-white', 'shadow-sm');
+                tab.classList.add('text-slate-500');
+                tab.classList.remove('text-slate-800'); // ensure it's not dark
+            });
+
+            // Set active style for selected tab
+            const activeTab = document.getElementById(`tab-${safeId}`);
+            if (activeTab) {
+                activeTab.classList.remove('text-slate-500');
+                activeTab.classList.add('bg-primary', 'text-white', 'shadow-sm');
+            }
+
+            // Render cards
+            renderCards(selectedDay);
+        }
+
+        // Initialize on Menú 1
+        document.addEventListener('DOMContentLoaded', () => {
+            setDay('Menú 1');
+        });
+    </script>
+</body>
+</html>
